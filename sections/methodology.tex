@@ -1,0 +1,172 @@
+% ============================================================
+% DETAILED METHODOLOGY & SUBSYSTEM CONFIGURATIONS
+% ============================================================
+
+\section{Detailed Methodology \& Subsystem Configurations}
+
+\subsection{System Architecture}
+
+Describe the complete system architecture, identifying the major hardware,
+software, communication, power, control, and user-interface blocks.
+
+% ------------------------------------------------------------
+% Standard Figure 1: System Block Diagram
+% ------------------------------------------------------------
+\begin{figure}[!htbp]
+    \centering
+    \IfFileExists{figures/block_diagram.pdf}{
+        \includegraphics[
+            width=0.92\textwidth,
+            height=0.58\textheight,
+            keepaspectratio
+        ]{figures/block_diagram}
+    }{
+        \IfFileExists{figures/block_diagram.png}{
+            \includegraphics[
+                width=0.92\textwidth,
+                height=0.58\textheight,
+                keepaspectratio
+            ]{figures/block_diagram}
+        }{
+            \IfFileExists{figures/block_diagram.jpg}{
+                \includegraphics[
+                    width=0.92\textwidth,
+                    height=0.58\textheight,
+                    keepaspectratio
+                ]{figures/block_diagram}
+            }{
+                \fbox{\parbox[c][0.25\textheight][c]{0.85\textwidth}{
+                    \centering
+                    \textbf{PLACEHOLDER: SYSTEM BLOCK DIAGRAM}\\[0.5em]
+                    Add \texttt{figures/block\_diagram.pdf},\\
+                    \texttt{figures/block\_diagram.png}, or\\
+                    \texttt{figures/block\_diagram.jpg}.
+                }}
+            }
+        }
+    }
+    \caption{System Block Diagram}
+    \label{fig:block_diagram}
+\end{figure}
+
+The block diagram should show the major functional blocks and the relationships
+between them. Keep the diagram at system level rather than showing individual
+component connections.
+
+\subsection{Hardware / Circuit Design}
+
+Describe the electrical architecture, power distribution, controllers,
+sensors, actuators, interfaces, protection circuitry, and communication buses.
+
+% ------------------------------------------------------------
+% Standard Figure 2: Circuit Diagram
+% ------------------------------------------------------------
+\begin{figure}[!htbp]
+    \centering
+    \IfFileExists{figures/circuit_diagram.pdf}{
+        \includegraphics[
+            width=0.95\textwidth,
+            height=0.62\textheight,
+            keepaspectratio
+        ]{figures/circuit_diagram}
+    }{
+        \IfFileExists{figures/circuit_diagram.png}{
+            \includegraphics[
+                width=0.95\textwidth,
+                height=0.62\textheight,
+                keepaspectratio
+            ]{figures/circuit_diagram}
+        }{
+            \IfFileExists{figures/circuit_diagram.jpg}{
+                \includegraphics[
+                    width=0.95\textwidth,
+                    height=0.62\textheight,
+                    keepaspectratio
+                ]{figures/circuit_diagram}
+            }{
+                \fbox{\parbox[c][0.28\textheight][c]{0.88\textwidth}{
+                    \centering
+                    \textbf{PLACEHOLDER: SYSTEM CIRCUIT DIAGRAM}\\[0.5em]
+                    Add \texttt{figures/circuit\_diagram.pdf},\\
+                    \texttt{figures/circuit\_diagram.png}, or\\
+                    \texttt{figures/circuit\_diagram.jpg}.
+                }}
+            }
+        }
+    }
+    \caption{System Circuit Diagram}
+    \label{fig:circuit_diagram}
+\end{figure}
+
+The circuit diagram should provide the electrical-level representation of the
+prototype. Ensure component designators, values, connectors, supply rails,
+ground connections, and major signal paths are readable.
+
+\subsection{Subsystem Configuration}
+
+Describe each major subsystem separately.
+
+\subsubsection{Subsystem 1: [Name]}
+
+Describe hardware, function, inputs, outputs, interfaces, and operating logic.
+
+\subsubsection{Subsystem 2: [Name]}
+
+Describe hardware, function, inputs, outputs, interfaces, and operating logic.
+
+\subsubsection{Subsystem 3: [Name]}
+
+Describe hardware, function, inputs, outputs, interfaces, and operating logic.
+
+\subsubsection{User Interface / Control Module}
+
+Describe the operator interface, display, controls, commands, and feedback.
+
+\subsection{Software / Control Logic}
+
+Describe the software architecture, control strategy, data processing,
+decision-making, communication logic, and fault-handling process.
+
+% ------------------------------------------------------------
+% Standard Pseudocode
+% ------------------------------------------------------------
+\subsection{Pseudocode / Algorithm}
+
+Use pseudocode to describe the principal operating algorithm. Replace the
+example below with project-specific logic.
+
+\begin{algorithm}[H]
+\caption{System Operating Algorithm}
+\label{alg:system_operation}
+
+\KwIn{System inputs / sensor data / user commands}
+\KwOut{Control outputs / system status}
+
+Initialize system\;
+Initialize sensors, actuators, and communication interfaces\;
+
+\While{system is active}{
+    Read input parameters\;
+    Validate input data\;
+    Process input data\;
+
+    \eIf{operating condition is normal}{
+        Generate control output\;
+        Update system status\;
+    }{
+        Execute fault-handling procedure\;
+        Generate warning / alert\;
+    }
+
+    Update user interface / monitoring data\;
+}
+
+Shutdown system safely\;
+
+\end{algorithm}
+
+\subsection{Operating Sequence}
+
+Describe the normal operating sequence from system initialization through
+shutdown. Refer to Figure~\ref{fig:block_diagram} and
+Algorithm~\ref{alg:system_operation} where appropriate.

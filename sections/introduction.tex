@@ -1,0 +1,44 @@
+% ============================================================
+% SYSTEM INTRODUCTION & STRATEGIC FRAMEWORK
+% ============================================================
+
+\section{System Introduction \& Strategic Framework}
+
+\subsection{System / Industry Context}
+
+Describe the current environment in which the system will operate.
+Explain existing practices, technologies, workflows, and relevant limitations.
+
+\subsection{The Integration Challenge}
+
+Describe the main technical or operational gap that the proposed system must address.
+
+\subsection{Proposed Innovation / Solution Concept}
+
+Explain the proposed approach at a high level before introducing detailed architecture.
+
+\begin{figure}[!htbp]
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto]
+
+        \node [hlddblock] (n1) {Subsystem / Node 1};
+        \node [hlddblock] (n2) [right=1cm of n1] {Subsystem / Node 2};
+        \node [hlddblock] (n3) [right=1cm of n2] {Subsystem / Node 3};
+
+        \node [hlddbroker] (core) [above=2cm of n2]
+            {Central Processing / Control Layer};
+
+        \node [hlddblock] (n4) [above=2cm of core]
+            {User Interface / Master Controller};
+
+        \path [hlddline] (n1) -- node[left] {Interface} (core);
+        \path [hlddline] (n2) -- (core);
+        \path [hlddline] (n3) -- node[right] {Interface} (core);
+        \path [hlddline] (core) -- node[right] {Control} (n4);
+        \path [hlddline] (n4) -- (core);
+
+    \end{tikzpicture}
+    \caption{High-Level System Architecture}
+\end{figure}
+
+Explain the architecture shown in Figure above and identify the major interfaces.
