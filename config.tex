@@ -19,8 +19,6 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows, positioning, calc}
 \usepackage{lipsum}
 
 % ------------------------------------------------------------
@@ -100,71 +98,6 @@
     tabsize=2,
     frame=single,
     rulecolor=\color{SecondaryDark}
-}
-
-% ------------------------------------------------------------
-% TikZ Styles
-% ------------------------------------------------------------
-\tikzset{
-    hlddblock/.style={
-        rectangle,
-        draw=PrimaryDark,
-        fill=LightGrey,
-        text width=3cm,
-        text centered,
-        rounded corners,
-        minimum height=1.5cm,
-        line width=1.2pt
-    },
-    hlddbroker/.style={
-        rectangle,
-        draw=AccentTeal,
-        fill=LightGrey,
-        text width=4cm,
-        text centered,
-        rounded corners,
-        minimum height=2cm,
-        line width=2pt
-    },
-    hlddline/.style={
-        draw,
-        -latex',
-        line width=1.5pt,
-        color=SecondaryDark
-    },
-    hlddstep/.style={
-        rectangle,
-        draw=SecondaryDark,
-        fill=white,
-        text width=3.5cm,
-        text centered,
-        minimum height=1cm,
-        line width=1pt
-    },
-    hldddecision/.style={
-        diamond,
-        draw=AccentTeal,
-        fill=LightGrey,
-        text width=2cm,
-        text centered,
-        minimum height=1cm,
-        line width=1.2pt
-    },
-    hlddalert/.style={
-        rectangle,
-        draw=red,
-        fill=LightGrey,
-        text width=3cm,
-        text centered,
-        minimum height=1cm,
-        line width=1.5pt
-    },
-    hlddarrow/.style={
-        draw,
-        -latex',
-        line width=1.2pt,
-        color=DarkText
-    }
 }
 
 % ------------------------------------------------------------

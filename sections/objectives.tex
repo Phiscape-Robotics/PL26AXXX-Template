@@ -19,28 +19,6 @@ List the primary engineering objectives.
 Describe the interaction between hardware, software, communication,
 processing, and user interfaces.
 
-\begin{figure}[h!]
-    \centering
-    \begin{tikzpicture}[node distance=1.5cm, auto]
-
-        \node [hlddstep] (s1) {Input / Data Generation};
-        \node [hlddstep] (s2) [below=0.8cm of s1] {Processing / Communication};
-        \node [hlddstep] (s3) [below=0.8cm of s2] {Analysis / Decision};
-        \node [hldddecision] (d1) [below=0.8cm of s3] {Condition Met?};
-        \node [hlddalert] (a1) [right=1.5cm of d1] {Alert / Corrective Action};
-        \node [hlddstep] (s4) [below=1.2cm of d1] {Normal Operation / Output};
-
-        \draw [hlddarrow] (s1) -- (s2);
-        \draw [hlddarrow] (s2) -- (s3);
-        \draw [hlddarrow] (s3) -- (d1);
-        \draw [hlddarrow] (d1) -- node[above] {Yes} (a1);
-        \draw [hlddarrow] (d1) -- node[left] {No} (s4);
-        \draw [hlddarrow] (a1) |- (s1);
-
-    \end{tikzpicture}
-    \caption{System Functional Workflow}
-\end{figure}
-
 \subsection{System Failure Recovery Protocol}
 
 Describe how the system detects, records, communicates, and recovers from

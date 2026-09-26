@@ -12,42 +12,28 @@ software, communication, power, control, and user-interface blocks.
 % ------------------------------------------------------------
 % Standard Figure 1: System Block Diagram
 % ------------------------------------------------------------
-\begin{figure}[!htbp]
-    \centering
-    \IfFileExists{figures/block_diagram.pdf}{
-        \includegraphics[
-            width=0.92\textwidth,
-            height=0.58\textheight,
-            keepaspectratio
-        ]{figures/block_diagram}
-    }{
-        \IfFileExists{figures/block_diagram.png}{
-            \includegraphics[
-                width=0.92\textwidth,
-                height=0.58\textheight,
-                keepaspectratio
-            ]{figures/block_diagram}
-        }{
-            \IfFileExists{figures/block_diagram.jpg}{
-                \includegraphics[
-                    width=0.92\textwidth,
-                    height=0.58\textheight,
-                    keepaspectratio
-                ]{figures/block_diagram}
-            }{
-                \fbox{\parbox[c][0.25\textheight][c]{0.85\textwidth}{
-                    \centering
-                    \textbf{PLACEHOLDER: SYSTEM BLOCK DIAGRAM}\\[0.5em]
-                    Add \texttt{figures/block\_diagram.pdf},\\
-                    \texttt{figures/block\_diagram.png}, or\\
-                    \texttt{figures/block\_diagram.jpg}.
-                }}
-            }
-        }
-    }
-    \caption{System Block Diagram}
-    \label{fig:block_diagram}
-\end{figure}
+\IfFileExists{figures/block_diagram.pdf}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.92\textwidth,height=0.58\textheight,keepaspectratio]{figures/block_diagram}
+        \caption{System Block Diagram}
+        \label{fig:block_diagram}
+    \end{figure}
+}{\IfFileExists{figures/block_diagram.png}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.92\textwidth,height=0.58\textheight,keepaspectratio]{figures/block_diagram}
+        \caption{System Block Diagram}
+        \label{fig:block_diagram}
+    \end{figure}
+}{\IfFileExists{figures/block_diagram.jpg}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.92\textwidth,height=0.58\textheight,keepaspectratio]{figures/block_diagram}
+        \caption{System Block Diagram}
+        \label{fig:block_diagram}
+    \end{figure}
+}{}}}
 
 The block diagram should show the major functional blocks and the relationships
 between them. Keep the diagram at system level rather than showing individual
@@ -59,44 +45,30 @@ Describe the electrical architecture, power distribution, controllers,
 sensors, actuators, interfaces, protection circuitry, and communication buses.
 
 % ------------------------------------------------------------
-% Standard Figure 2: Circuit Diagram
+% Optional circuit diagram asset from the figures folder
 % ------------------------------------------------------------
-\begin{figure}[!htbp]
-    \centering
-    \IfFileExists{figures/circuit_diagram.pdf}{
-        \includegraphics[
-            width=0.95\textwidth,
-            height=0.62\textheight,
-            keepaspectratio
-        ]{figures/circuit_diagram}
-    }{
-        \IfFileExists{figures/circuit_diagram.png}{
-            \includegraphics[
-                width=0.95\textwidth,
-                height=0.62\textheight,
-                keepaspectratio
-            ]{figures/circuit_diagram}
-        }{
-            \IfFileExists{figures/circuit_diagram.jpg}{
-                \includegraphics[
-                    width=0.95\textwidth,
-                    height=0.62\textheight,
-                    keepaspectratio
-                ]{figures/circuit_diagram}
-            }{
-                \fbox{\parbox[c][0.28\textheight][c]{0.88\textwidth}{
-                    \centering
-                    \textbf{PLACEHOLDER: SYSTEM CIRCUIT DIAGRAM}\\[0.5em]
-                    Add \texttt{figures/circuit\_diagram.pdf},\\
-                    \texttt{figures/circuit\_diagram.png}, or\\
-                    \texttt{figures/circuit\_diagram.jpg}.
-                }}
-            }
-        }
-    }
-    \caption{System Circuit Diagram}
-    \label{fig:circuit_diagram}
-\end{figure}
+\IfFileExists{figures/circuit_diagram.pdf}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.95\textwidth,height=0.62\textheight,keepaspectratio]{figures/circuit_diagram}
+        \caption{System Circuit Diagram}
+        \label{fig:circuit_diagram}
+    \end{figure}
+}{\IfFileExists{figures/circuit_diagram.png}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.95\textwidth,height=0.62\textheight,keepaspectratio]{figures/circuit_diagram}
+        \caption{System Circuit Diagram}
+        \label{fig:circuit_diagram}
+    \end{figure}
+}{\IfFileExists{figures/circuit_diagram.jpg}{
+    \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=0.95\textwidth,height=0.62\textheight,keepaspectratio]{figures/circuit_diagram}
+        \caption{System Circuit Diagram}
+        \label{fig:circuit_diagram}
+    \end{figure}
+}{}}}
 
 The circuit diagram should provide the electrical-level representation of the
 prototype. Ensure component designators, values, connectors, supply rails,
@@ -168,5 +140,5 @@ Shutdown system safely\;
 \subsection{Operating Sequence}
 
 Describe the normal operating sequence from system initialization through
-shutdown. Refer to Figure~\ref{fig:block_diagram} and
-Algorithm~\ref{alg:system_operation} where appropriate.
+shutdown. Refer to the system block diagram in the figures folder, when
+provided, and Algorithm~\ref{alg:system_operation} where appropriate.

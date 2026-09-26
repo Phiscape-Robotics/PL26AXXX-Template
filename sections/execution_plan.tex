@@ -21,47 +21,6 @@ Define the project phases, expected outputs, dependencies, and review gates.
 
 Replace the example timeline below with project-specific dates and durations.
 
-\begin{figure}[!htbp]
-    \centering
-    \small
-    \begin{tikzpicture}
-        \draw[line width=1pt, color=DarkText]
-            (0,0) rectangle (14,4.5);
-
-        \draw[fill=PrimaryDark!20]
-            (0,4) rectangle (14,4.5);
-
-        \node at (7,4.25)
-            {\bfseries Project Milestone Track};
-
-        \foreach \x in {4,6,8,10,12} {
-            \draw[dotted, color=gray] (\x,0) -- (\x,4);
-        }
-
-        \node[anchor=west] at (0.2,3.5) {\footnotesize Phase 1};
-        \node[anchor=west] at (0.2,2.9) {\footnotesize Phase 2};
-        \node[anchor=west] at (0.2,2.3) {\footnotesize Phase 3};
-        \node[anchor=west] at (0.2,1.7) {\footnotesize Phase 4};
-        \node[anchor=west] at (0.2,1.1) {\footnotesize Phase 5};
-        \node[anchor=west] at (0.2,0.5) {\footnotesize Phase 6};
-
-        \draw[fill=AccentTeal] (4.5,3.4) rectangle (5.5,3.6);
-        \draw[fill=SecondaryDark] (5.5,2.8) rectangle (7.5,3.0);
-        \draw[fill=AccentTeal] (7.5,2.2) rectangle (9.0,2.4);
-        \draw[fill=SecondaryDark] (9.0,1.6) rectangle (11.0,1.8);
-        \draw[fill=AccentTeal] (11.0,1.0) rectangle (12.5,1.2);
-        \draw[fill=PrimaryDark] (12.5,0.4) rectangle (13.8,0.6);
-
-        \node at (5,3.8) {\tiny W1-2};
-        \node at (6.5,3.2) {\tiny W3-6};
-        \node at (8.2,2.6) {\tiny W7-9};
-        \node at (10,2.0) {\tiny W10-12};
-        \node at (11.7,1.4) {\tiny W13-14};
-        \node at (13.1,0.8) {\tiny W15-16};
-    \end{tikzpicture}
-    \caption{Chronological Project Timeline}
-\end{figure}
-
 \subsection{Critical Path Analysis \& Risk Assessment}
 
 Identify activities that can delay the project and describe mitigation measures.
