@@ -1,0 +1,41 @@
+PROJECT DESCRIPTION — WRITE THIS IN YOUR OWN WORDS
+
+Use this file to explain the project informally before filling in the formal
+document. Write naturally; rough notes, full sentences, and bullet points are
+all fine. Keep confirmed facts separate from ideas that are still uncertain.
+
+Project name:
+
+What problem are you trying to solve?
+
+Who experiences this problem, and where does it happen?
+
+What do you plan to build? Explain how you imagine it working.
+
+What are the main hardware parts, software, or services you expect to use?
+
+What information goes into the system, what does it do with that information,
+and what output or result should it produce?
+
+What makes your proposed solution useful or different?
+
+What requirements, limits, or constraints do you already know about?
+
+What have you already built, tested, or decided?
+
+What is still unknown, undecided, or only an assumption?
+
+Anything else that would help someone understand the project:
+
+
+HOW TO USE THIS BRIEF
+
+Treat this file as background for preparing the HLDD. Use its confirmed details
+to tailor the project metadata in config.tex and the relevant sections/*.tex
+content. Do not copy uncertain ideas into the document as established facts.
+This file is a writing aid and is not included in the compiled PDF.
+
+Keep draw.io source files in figures/. To display a diagram in the PDF, export
+it from draw.io as PDF, PNG, or JPG using the expected filename described in
+figures/README.txt. The LaTeX document displays the exported image, not the
+.drawio source file itself.

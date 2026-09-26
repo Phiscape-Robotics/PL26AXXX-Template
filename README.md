@@ -26,9 +26,11 @@ figures/
 
 - `main.tex` — document entry point
 - `config.tex` — global styling and project metadata
+- `project_exp.txt` — plain language project brief used as background when
+  writing project-specific metadata and sections
 - `HOW_TO_USE.md` — detailed usage guide
 - `sections/` — modular document sections
-- `figures/` — project diagrams
+- `figures/` — draw.io source files and exported diagram images
 - `tables/` — optional external table assets
 
 The template is based on the supplied HLDD document's visual structure and has

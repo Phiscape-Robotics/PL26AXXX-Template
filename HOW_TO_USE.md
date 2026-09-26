@@ -43,6 +43,7 @@ overleaf_hldd_template/
 │
 ├── main.tex
 ├── config.tex
+├── project_exp.txt
 ├── HOW_TO_USE.md
 ├── README.md
 │
@@ -68,7 +69,19 @@ overleaf_hldd_template/
 
 ---
 
-# 4. First File to Edit — `config.tex`
+# 4. Start with `project_exp.txt`
+
+Before editing the formal document, explain the project in your own words in
+`project_exp.txt`. It is background for preparing the project metadata and
+tailoring the sections in `sections/`. Write freely, and mark assumptions or
+open questions clearly so they are not presented as confirmed facts. This file
+is a writing aid and is not printed in the PDF.
+
+Use the brief to decide what belongs in `config.tex` and the section files. The
+formal document still lives in those `.tex` files; the text brief provides the
+project context for writing them.
+
+# 5. Project Metadata — `config.tex`
 
 The document's global metadata and visual configuration are in:
 
@@ -105,20 +118,22 @@ The following sections of `config.tex` define the common visual standard:
 - Header/footer formatting
 - Section heading styles
 - Code listing styles
-- TikZ styles
 - Hyperlink styling
 
 Only change these if the organization wants to change the master document style.
 
 ---
 
-# 5. Add the Two Standard Figures
+# 6. Add Project Diagrams to `figures/`
 
 Every HLDD should have two main technical figures.
 
 ## Figure 1 — System Block Diagram
 
-Place the file here:
+Keep editable draw.io source files in `figures/`, for example
+`figures/block_diagram.drawio`. LaTeX does not render `.drawio` files directly.
+Export each diagram from draw.io as PDF, PNG, or JPG into the same folder, using
+the expected base name. For example, export the block diagram as:
 
 ```text
 figures/block_diagram.png
@@ -155,7 +170,7 @@ Do not use the block diagram for detailed component-level wiring.
 
 ## Figure 2 — Circuit Diagram
 
-Place the file here:
+Likewise, keep a circuit source file in `figures/` and export it as:
 
 ```text
 figures/circuit_diagram.png
@@ -190,7 +205,7 @@ Make sure the diagram remains readable when printed.
 
 ---
 
-# 6. Recommended Figure Format
+# 7. Recommended Figure Format
 
 For engineering diagrams, prefer:
 
@@ -216,7 +231,7 @@ sections/methodology.tex
 
 ---
 
-# 7. Pseudocode
+# 8. Pseudocode
 
 Most projects should include pseudocode.
 
@@ -283,7 +298,7 @@ required. The firmware section can contain representative code separately.
 
 ---
 
-# 8. Section-by-Section Editing
+# 9. Section-by-Section Editing
 
 ## `sections/titlepage.tex`
 
@@ -364,10 +379,10 @@ The standard order is:
 
 ```text
 5.1 System Architecture
-    → Block Diagram
+    → Exported block diagram from `figures/`
 
 5.2 Hardware / Circuit Design
-    → Circuit Diagram
+    → Exported circuit diagram from `figures/`
 
 5.3 Subsystem Configuration
     → Individual subsystem descriptions
@@ -450,7 +465,7 @@ Include:
 
 ---
 
-# 9. Adding References
+# 10. Adding References
 
 References are maintained at the end of:
 
@@ -482,12 +497,12 @@ BibTeX-based reference system.
 
 ---
 
-# 10. Recommended Workflow
+# 11. Recommended Workflow
 
 Use this order when preparing a new HLDD:
 
 ```text
-1. Define project
+1. Explain the project in project_exp.txt
        ↓
 2. Update config.tex
        ↓
@@ -522,7 +537,7 @@ Use this order when preparing a new HLDD:
 
 ---
 
-# 11. Final Review Checklist
+# 12. Final Review Checklist
 
 Before submitting an HLDD, verify:
 
@@ -562,7 +577,7 @@ Before submitting an HLDD, verify:
 
 ---
 
-# 12. Master Template Principle
+# 13. Master Template Principle
 
 The template should remain visually consistent across projects.
 
@@ -582,11 +597,10 @@ a specific requirement.
 This ensures that all HLDD documents produced by the organization have a
 consistent professional appearance.
 
-## 13. If the diagrams are not ready yet
+## 14. If the diagram exports are not ready yet
 
-The template is designed to compile even when the two project diagrams have
-not been added yet. `methodology.tex` automatically displays a placeholder
-box until one of the following files exists:
+The template compiles when diagram exports have not been added. A figure is
+included only when an exported image with one of these names exists:
 
 ```text
 figures/block_diagram.pdf
@@ -598,4 +612,6 @@ figures/circuit_diagram.png
 figures/circuit_diagram.jpg
 ```
 
-This means you can start writing the document before the diagrams are finalized.
+You can start writing before the diagrams are finalized. Keep `.drawio` source
+files in `figures/`; export them to a supported format above when you want them
+to appear in the PDF.
