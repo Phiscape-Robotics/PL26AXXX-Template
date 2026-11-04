@@ -14,7 +14,6 @@ Every project should normally contain:
 - Hardware and software descriptions
 - Constraints and engineering objectives
 - Bill of Materials (BOM)
-- Project execution plan
 - Risk assessment
 - Academic / engineering alignment
 - References
@@ -48,16 +47,15 @@ overleaf_hldd_template/
 ├── README.md
 │
 ├── sections/
-│   ├── titlepage.tex
-│   ├── document_control.tex
-│   ├── introduction.tex
-│   ├── problem_statement.tex
-│   ├── objectives.tex
-│   ├── methodology.tex
-│   ├── firmware.tex
-│   ├── bom.tex
-│   ├── execution_plan.tex
-│   └── conclusion.tex
+│   ├── 00_titlepage.tex
+│   ├── 01_document_control.tex
+│   ├── 02_introduction.tex
+│   ├── 03_problem_statement.tex
+│   ├── 04_objectives.tex
+│   ├── 05_methodology.tex
+│   ├── 06_firmware.tex
+│   ├── 07_bom.tex
+│   └── 08_conclusion.tex
 │
 ├── figures/
 │   ├── block_diagram.png
@@ -226,7 +224,7 @@ If you use a different filename, update the corresponding
 `\includegraphics{...}` command in:
 
 ```text
-sections/methodology.tex
+sections/05_methodology.tex
 ```
 
 ---
@@ -238,7 +236,7 @@ Most projects should include pseudocode.
 The standard location is:
 
 ```text
-sections/methodology.tex
+sections/05_methodology.tex
 ```
 
 The template already includes an `algorithm2e` pseudocode environment.
@@ -300,7 +298,7 @@ required. The firmware section can contain representative code separately.
 
 # 9. Section-by-Section Editing
 
-## `sections/titlepage.tex`
+## `sections/00_titlepage.tex`
 
 Normally no editing is required.
 
@@ -308,7 +306,7 @@ It automatically uses metadata from `config.tex`.
 
 ---
 
-## `sections/document_control.tex`
+## `sections/01_document_control.tex`
 
 Fill in:
 
@@ -320,7 +318,7 @@ Fill in:
 
 ---
 
-## `sections/introduction.tex`
+## `sections/02_introduction.tex`
 
 Describe:
 
@@ -332,7 +330,7 @@ Describe:
 
 ---
 
-## `sections/problem_statement.tex`
+## `sections/03_problem_statement.tex`
 
 Define:
 
@@ -351,7 +349,7 @@ the actual project.
 
 ---
 
-## `sections/objectives.tex`
+## `sections/04_objectives.tex`
 
 Define the engineering objectives.
 
@@ -371,7 +369,7 @@ Design a highly accurate system.
 
 ---
 
-## `sections/methodology.tex`
+## `sections/05_methodology.tex`
 
 This is the main technical section.
 
@@ -402,7 +400,7 @@ not contain the corresponding engineering artifact.
 
 ---
 
-## `sections/firmware.tex`
+## `sections/06_firmware.tex`
 
 Use this for:
 
@@ -419,7 +417,7 @@ Do not duplicate the complete source code of the project unless required.
 
 ---
 
-## `sections/bom.tex`
+## `sections/07_bom.tex`
 
 Add the complete prototype BOM.
 
@@ -438,22 +436,9 @@ Update the cumulative budget.
 
 ---
 
-## `sections/execution_plan.tex`
-
-Define:
-
-- Development phases
-- Milestones
-- Timeline
-- Critical path
-- Risks
-- Mitigation
-
-Update the example Gantt chart to match the actual project.
-
 ---
 
-## `sections/conclusion.tex`
+## `sections/08_conclusion.tex`
 
 Include:
 
@@ -524,9 +509,9 @@ Use this order when preparing a new HLDD:
        ↓
 11. Prepare BOM
        ↓
-12. Prepare execution plan
+12. Complete project-specific technical and academic alignment sections
        ↓
-13. Add risks and mitigation
+13. Record project risks and mitigations in relevant sections
        ↓
 14. Add references
        ↓

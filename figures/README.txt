@@ -13,7 +13,7 @@ Required project figures:
 2. circuit_diagram.png (or .pdf/.jpg)
 
 If you use another filename, update the matching image path in
-sections/methodology.tex.
+sections/05_methodology.tex.
 
 Recommended:
 - Prefer PDF for vector diagrams; PNG and JPG exports are also supported.

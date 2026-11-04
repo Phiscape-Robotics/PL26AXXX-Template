@@ -4,7 +4,7 @@ Reusable modular HLDD template for engineering projects.
 
 ## Start here
 
-Read **`HOW_TO_USE.md`** before creating a project.
+Read **`HOW_TO_USE.md`** and **`agent.md`** before creating or editing a project.
 
 ## Core project artifacts
 
@@ -28,6 +28,8 @@ figures/
 - `config.tex` — global styling and project metadata
 - `project_exp.txt` — plain language project brief used as background when
   writing project-specific metadata and sections
+- `agent.md` — project document editing guidance
+- `agent.md` — project document editing guidance
 - `HOW_TO_USE.md` — detailed usage guide
 - `sections/` — modular document sections
 - `figures/` — draw.io source files and exported diagram images
