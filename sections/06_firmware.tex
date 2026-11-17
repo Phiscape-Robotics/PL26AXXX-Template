@@ -1,35 +1,26 @@
 % ============================================================
-% FIRMWARE & AUTOMATED PROCESSING
+% SOFTWARE DESIGN
 % ============================================================
 
-\section{Firmware Design \& Automated Processing Engine}
+\section{Software Design}
 
-\subsection{Telemetry / Data Structure}
+\subsection{Software Modules and Responsibilities}
 
-Define the structure of messages, logs, sensor records, commands,
-identifiers, timestamps, and status fields.
+Identify the main software modules and describe each module's responsibility,
+inputs, outputs, and interfaces. Explain how the modules are organized across
+controllers, applications, or services, as applicable.
 
-\subsection{Core Processing Implementation}
+\subsection{Data Flow and Communication}
 
-Describe the software processing flow and include the key implementation
-logic or representative code.
+Describe how data moves between software modules and connected devices.
+Define the relevant message formats, commands, sensor records, status fields,
+and communication protocols. Record timing requirements and data validation
+where applicable. Refer to the operating algorithm in the methodology section
+rather than repeating it here.
 
-\begin{lstlisting}[language=Python, caption=Example Processing / Monitoring Loop]
-# Replace this block with project-specific implementation.
+\subsection{Fault Handling and Recovery}
 
-def process_record(record):
-    # Validate input
-    # Extract relevant parameters
-    # Apply processing / detection logic
-    # Return system status
-    return "STATUS_NORMAL"
-\end{lstlisting}
-
-\subsection{Detection / Decision Logic}
-
-Describe the rules, thresholds, algorithms, or machine-learning methods used.
-
-\subsection{Fault Handling and Alerts}
-
-Describe how detected faults are logged, communicated, isolated,
-recovered, or escalated.
+Describe how software detects, logs, and communicates faults. Define the
+responsible modules, fault states, recovery actions, and conditions for
+resuming operation. Relate these mechanisms to the system failure recovery
+protocol without repeating the system-level description.

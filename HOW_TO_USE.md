@@ -292,7 +292,7 @@ Repeat
 ```
 
 Use actual source code only when implementation details are specifically
-required. The firmware section can contain representative code separately.
+required. The software design section can contain representative code when needed.
 
 ---
 
@@ -404,16 +404,15 @@ not contain the corresponding engineering artifact.
 
 Use this for:
 
-- Firmware architecture
-- Communication protocols
-- Data structures
-- Processing logic
-- Algorithms
-- Fault detection
-- Alert handling
-- Representative source code
+- Software modules and responsibilities
+- Data flow and communication
+- Fault handling and recovery
 
-Do not duplicate the complete source code of the project unless required.
+Methodology explains how the system operates; this section explains how the
+software is organized to support that operation. Reference the methodology's
+algorithm and the system failure recovery protocol rather than repeating them.
+Include representative code only when it clarifies an architectural decision;
+do not duplicate the complete source code of the project unless required.
 
 ---
 
