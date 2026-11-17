@@ -322,11 +322,11 @@ Fill in:
 
 Describe:
 
-1. Existing system / industry context
-2. Current limitations
-3. Integration challenge
-4. Proposed solution concept
-5. High-level architecture
+1. Industrial Setup — the existing environment, systems, and practices
+2. Identified Gap — current limitations and the engineering need
+
+Describe the proposed innovation and gap-closing approach under System
+Architecture in `sections/05_methodology.tex`.
 
 ---
 
