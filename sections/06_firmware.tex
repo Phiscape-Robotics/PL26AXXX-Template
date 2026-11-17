@@ -10,6 +10,24 @@ Identify the main software modules and describe each module's responsibility,
 inputs, outputs, and interfaces. Explain how the modules are organized across
 controllers, applications, or services, as applicable.
 
+The example below illustrates how input validation, processing, decision logic,
+and fault handling can be separated into functions. Replace it with
+representative project-specific code and select the appropriate language;
+these function names and this structure are illustrative, not mandatory.
+
+\begin{lstlisting}[language=Python, caption=Illustrative Software Module Structure]
+# Template example only: replace with project-specific logic.
+# Helper functions below must be defined for the actual project.
+
+def process_record(record):
+    if not validate_record(record):
+        return handle_fault("INVALID_INPUT")
+
+    processed_data = process_input(record)
+    decision = evaluate_conditions(processed_data)
+    return build_status(decision)
+\end{lstlisting}
+
 \subsection{Data Flow and Communication}
 
 Describe how data moves between software modules and connected devices.

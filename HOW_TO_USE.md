@@ -411,8 +411,10 @@ Use this for:
 Methodology explains how the system operates; this section explains how the
 software is organized to support that operation. Reference the methodology's
 algorithm and the system failure recovery protocol rather than repeating them.
-Include representative code only when it clarifies an architectural decision;
-do not duplicate the complete source code of the project unless required.
+Use the illustrative code structure as a guide to the expected level of detail.
+Replace it with representative project-specific code in the appropriate language,
+adapting the structure to the actual design. Do not duplicate the complete source
+code of the project unless required.
 
 ---
 
